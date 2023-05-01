@@ -58,3 +58,7 @@ variable "city" {}
 output "city_name_op" {
     value =  var.city
 }
+
+output "city_name_op1" {
+    value =  "the name of the city is ${var.city}"
+}
