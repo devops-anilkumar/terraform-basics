@@ -63,8 +63,10 @@ output "city_name_op1" {
     value =  "the name of the city is ${var.city}"
 }
 
-variable "state" {}
-
+# variable "state" {}
+variable "state" {
+     default = "telangana"
+}
 output "state_name_op1" {
     value =  "the name of the state is ${var.state}"
 }
