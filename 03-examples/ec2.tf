@@ -22,7 +22,6 @@ output "private_dns_of_server" {
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
   description = "Allow ssh inbound traffic"
-  vpc_id      = aws_vpc.main.id
 
   ingress {
     description      = "SSH from VPC"
