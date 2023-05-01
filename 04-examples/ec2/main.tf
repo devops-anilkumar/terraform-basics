@@ -14,5 +14,5 @@ variable "sg" {}
 
 #BLOCK TO PRINT THE ATTRIBUTES
 output "private_dns" {
-    value       =   "aws_instance.web.private_dns"
+    value       =   aws_instance.web.private_dns
 }
