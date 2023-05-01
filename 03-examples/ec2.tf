@@ -6,7 +6,7 @@ provider "aws" {
 
 resource "aws_instance" "web" {
   ami           = "ami-01a4c5cf14f30168e"
-  instance_type = "t3.micro"
+  instance_type = "t2.micro"
 
   tags = {
     Name = "terraform instance_server_name"
