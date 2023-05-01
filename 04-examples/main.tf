@@ -9,3 +9,7 @@ module "sg" {
     source =  "./sg"
 }
 
+#PRINTING THE OUTPUT FROM EC2 MODULE
+output "private_dns" {
+    value       =   module.ec2.private_dns
+}
