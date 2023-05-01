@@ -2,7 +2,7 @@
 resource "aws_instance" "web" {
   ami                     = "ami-01a4c5cf14f30168e"
   instance_type           = "t2.micro"
-  vpc_security_group_ids  = [var.sg]
+  vpc_security_group_ids  = [var.sg_id]
 
   tags = {
     Name        = "terraform instance_server_name"
@@ -10,7 +10,7 @@ resource "aws_instance" "web" {
 }
 
 
-variable "sg" {}
+variable "sg_id" {}
 
 #BLOCK TO PRINT THE ATTRIBUTES
 output "private_dns" {
