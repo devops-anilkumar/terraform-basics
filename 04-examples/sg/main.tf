@@ -25,6 +25,6 @@ resource "aws_security_group" "allow_ssh_sg" {
 
 # DECLARE THE ID OF THE SG ID,SO THAT WE CAN PASS IT TO ROOT MODULE
 
-output "sg" {
+output "sg_id" {
     value  = aws_security_group.allow_ssh_sg.id
 }
