@@ -48,7 +48,7 @@ variable "sample_map" {
 }
 
 output "sample_map_op" {
-    value = "welcome to ${var.sample_map["mode"] - ${var.sample_map["training"]} training and the batch timings are ${var.sample_map["timing"]}
+    value = "welcome to ${var.sample_map["mode"]} - ${var.sample_map["training"]} training and the batch timings are ${var.sample_map["timing"]}"
 }
 
 
