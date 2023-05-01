@@ -51,5 +51,10 @@ output "sample_map_op" {
     value = "welcome to ${var.sample_map["mode"]} - ${var.sample_map["training"]} training and the batch timings are ${var.sample_map["timings"]}"
 }
 
+#DECLEARING AN EMPTY VARIABLRE
 
+variable "city" {}
 
+output "city_name_op" {
+    value =  var.city
+}
