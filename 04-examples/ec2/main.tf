@@ -1,6 +1,6 @@
 #BLOCK TO CREATE EC2
 resource "aws_instance" "web" {
-  ami                     = "data.aws_ami.my_ami.image_id"
+  ami                     =  data.aws_ami.my_ami.image_id
   instance_type           = "t2.micro"
   vpc_security_group_ids  = [var.sg]
 
