@@ -1,7 +1,7 @@
 #ALWAYS STARTS WITH DECLEARING PROVIDER INFORMATION 
 
 provider "aws" {
-    region = "us-east-1"
+    region      = "us-east-1"
 }
 
 resource "aws_instance" "web" {
@@ -9,11 +9,11 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "terraform instance_server_name"
+    Name        = "terraform instance_server_name"
   }
 }
 
 #BLOCK TO PRINT THE ATTRIBUTE
 output "private_dns_of_server" {
-    value = aws_instance.web.private_dns
+    value       = aws_instance.web.private_dns
 }
