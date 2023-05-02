@@ -48,3 +48,12 @@ in AWS vpc stand for virtual private cloud
 surely we will design and provision our network
 
 in aws each and every region will have a default network where all the infra is created in it,, but in reality every organisation creates their own network as per their needs 
+
+
+### what is network peering?
+by default , one network canot communicate with another network directly. in order to establish direct/private communication we need to perform peering between the networks
+
+### public ip adresss vs private ip adresss
+
+public ip is issued by isp  and is unique across the globe
+private ip is unique only with in the infra net vs corporate network
