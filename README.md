@@ -57,3 +57,16 @@ by default , one network canot communicate with another network directly. in ord
 
 public ip is issued by isp  and is unique across the globe
 private ip is unique only with in the infra net vs corporate network
+
+#### network goals
+
+ 1. to create a network
+ 2. break the network into 2 peaces (sub network)
+ 3.one is public subnet (should have have public  ip and acesses to internet)
+ 4. other is prvate sub net (should not have public ip and no direct acess to internet)
+ 5. aslo WS should default network should be able to talk to public/private network ,using private ip
+
+
+   network CIDR :  10.0.0.0/24
+   public subnet cidr :  10.0.0.0/25
+   private subnet cidr : 10.0.0.128/25
