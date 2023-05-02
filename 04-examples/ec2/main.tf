@@ -23,7 +23,7 @@ resource "aws_instance" "web" {
     ]
   }
 }
-}
+
 
 
 variable "sg" {}
