@@ -37,3 +37,14 @@ https://developer.hashicorp.com/terraform/downloads
 note : provisioners by default are 'create-time' provisions , this means provisioners by default will only run during the creation of the resource ,, not all the time you run the 'terraform-apply'
 
       : there are also atype of provisioners called 'destroy-time ' provisioners which will only be excuted during the deletion of the resource
+
+### first of the any project is 'network creation'
+
+1. we need to design the network and then we will provision the infra
+2. the design should include the size of the network and also future demands on mind 
+3.network should be designed in such a way that only needed infra should be public facing rest of them should be 100% private
+4. when i say private , none none of them should be acesseble directly from internet
+in AWS vpc stand for virtual private cloud
+surely we will design and provision our network
+
+in aws each and every region will have a default network where all the infra is created in it,, but in reality every organisation creates their own network as per their needs 
