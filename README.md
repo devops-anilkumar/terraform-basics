@@ -34,4 +34,6 @@ https://developer.hashicorp.com/terraform/downloads
   3. for second step to happend we also ensure first, connection provisioner has to be excuted , so that connection will be established and then we can run the remote -exec provisioner to run the ansible pull command.
 
 
-note : provisioners by default are 'create-time' provisions , this means provisioners by default will only run during the creation of the resource
+note : provisioners by default are 'create-time' provisions , this means provisioners by default will only run during the creation of the resource ,, not all the time you run the 'terraform-apply'
+
+      : there are also atype of provisioners called 'destroy-time ' provisioners which will only be excuted during the deletion of the resource
