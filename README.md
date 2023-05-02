@@ -32,3 +32,6 @@ https://developer.hashicorp.com/terraform/downloads
   2.  once ec2 is created i would like to run the ansible pull command and ansible playbook so my server will be operationally ready
 
   3. for second step to happend we also ensure first, connection provisioner has to be excuted , so that connection will be established and then we can run the remote -exec provisioner to run the ansible pull command.
+
+
+note : provisioners by default are 'create-time' provisions , this means provisioners by default will only run during the creation of the resource
