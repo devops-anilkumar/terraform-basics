@@ -85,3 +85,12 @@ in AWS we call it as a IGW which is a software component and we can attach one I
 in order to achieve peering ensure that both VPC CIDR,s are unique ,if not peering will not work
 
 ###  install terrafile
+
+..........
+### HOW TO CREATE INFRA BY SUPPLYING THE BACKEND CONFIG FROM A SEPERATE FOLDER
+
+.......
+terrafile -f env-dev/Terrafile
+terraform init -backend-config=env-dev/dev-backend.tfvars
+terraform plan -var-file=env-dev/dev.tfvars
+terraform apply -auto-approve -var-file=env-dev/dev.tfvars
