@@ -65,6 +65,9 @@ private ip is unique only with in the infra net vs corporate network
  3.one is public subnet (should have have public  ip and acesses to internet)
  4. other is prvate sub net (should not have public ip and no direct acess to internet)
  5. aslo WS should default network should be able to talk to public/private network ,using private ip
+ 6. machines in the public network should have acess to network anddddd from the internet
+ 7.  mahines in private network should not acess directly from the network
+ 8. if private server wants to talk to internet, is should be do able.
 
 
    network CIDR :  10.0.0.0/24
