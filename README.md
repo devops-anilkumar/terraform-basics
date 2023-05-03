@@ -70,3 +70,11 @@ private ip is unique only with in the infra net vs corporate network
    network CIDR :  10.0.0.0/24
    public subnet cidr :  10.0.0.0/25
    private subnet cidr : 10.0.0.128/25
+
+### points to remember
+
+if a machine is not having a public ip then ,you cannot acess from external or public network
+ROUTER is a device which helps you in establishing connectivity between two different networks 
+in AWS we call it as a IGW which is a software component and we can attach one IGW per VPC
+
+## network peering
