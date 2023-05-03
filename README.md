@@ -83,3 +83,5 @@ in AWS we call it as a IGW which is a software component and we can attach one I
 ## network peering
 
 in order to achieve peering ensure that both VPC CIDR,s are unique ,if not peering will not work
+
+###  install terrafile
